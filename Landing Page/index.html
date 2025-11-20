@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking Css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- linking font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Paw Friendly Demo</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="navbar-logo" href="#">
+          <img src="img/logo.png" alt="" />
+          <h2>PawHaven</h2>
+        </a>
+        <ul class="navbar-menu">
+          <button class="menu-close-button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#category" class="nav-link">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a href="#product" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <button class="sidebar-btn" style="color: black">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <h1 class="title">
+          Happy Paws, Cheerful Wings-Premium Nutrition for Every Pet!
+        </h1>
+      </section>
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <h2 class="section-title">About Us</h2>
+        <div class="section-content">
+          <div class="about-details">
+            <span><i class="fa-solid fa-staff-snake"></i></span>
+            <h3 class="title">Expert Selection</h3>
+            <p class="description">
+              Brands approved by veterinarians and nutrition specialists.
+            </p>
+          </div>
+          <div class="about-details">
+            <span><i class="fa-regular fa-cart-shopping"></i></span>
+            <h3 class="title">Wide Product Range</h3>
+            <p class="descriptipn">
+              Hundreds of varieties of food suitable for puppies, adult pets,
+              sensitive digestion and special diets.
+            </p>
+          </div>
+          <div class="about-details">
+            <span><i class="fa-regular fa-truck"></i></span>
+            <h3 class="title">Fast & Careful Delivery</h3>
+            <p class="descriptipn">
+              your order is carefully packed and delivered to your door as
+              quickly as possible.
+            </p>
+          </div>
+          <div class="about-details">
+            <span><i class="fa-regular fa-star"></i></span>
+            <h3 class="title">Customer Satisfaction</h3>
+            <p class="descriptipn">
+              24/7 support and an easy return/exchange quarantee.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Category Section -->
+      <section id="category" class="category-section">
+        <h2 class="section-title">CATEGORİES</h2>
+        <div class="section-content">
+          <div class="category-details">
+            <h3 class="category-title category-cat">
+              <span class="category-icon"><i class="fa-solid fa-paw"></i></span>
+              Cat Foods
+            </h3>
+            <img src="img/cat.JPG" alt="" class="category-image" />
+            <p class="subtitle">Irresistible delicacies for little junters!</p>
+            <button class="button-category">See Cat Food</button>
+          </div>
+          <div class="category-details">
+            <h3 class="category-title category-dog">
+              <span class="category-icon"
+                ><i class="fa-regular fa-bone"></i
+              ></span>
+              Dog Foods
+            </h3>
+            <img src="img/dog1.png" alt="" class="category-image" />
+            <p class="subtitle">The power our energetic friends need</p>
+            <button class="button-category">See Dog Foods</button>
+          </div>
+          <div class="category-details">
+            <h3 class="category-title category-bird">
+              <span class="category-icon"
+                ><i class="fa-regular fa-dove"></i
+              ></span>
+              Bird Foods
+            </h3>
+            <img src="img/bird.png" alt="" class="category-image" />
+            <p class="subtitle">Special vitamin store for flying friends</p>
+            <button class="button-category">See Bird Foods</button>
+          </div>
+        </div>
+      </section>
+      <!-- Products Section -->
+      <h2 class="section-title">PRODUCTS</h2>
+      <section id="product" class="product-section">
+        <div class="section-content">
+          <div class="section-details">
+            <img src="img/bird-1.png" alt="" />
+            <p class="subtitle">Special vitamin balls bird food</p>
+          </div>
+          <div class="section-details">
+            <img src="img/bird-2.png" alt="" />
+            <p class="subtitle">Special vitamin store bird food</p>
+          </div>
+          <div class="section-details">
+            <img src="img/cat-1.png" alt="" />
+            <p class="subtitle">Salmon and grain-free adult cat food</p>
+          </div>
+          <div class="section-details">
+            <img src="img/cat-2.png" alt="" />
+            <p class="subtitle">Lamb and sensitive digestion cat food</p>
+          </div>
+          <div class="section-details">
+            <img src="img/dog-1.png" alt="" />
+            <p class="subtitle">
+              Chicken and vegetable large breed and adult dog food
+            </p>
+          </div>
+          <div class="section-details">
+            <img src="img/dog-2.png" alt="" />
+            <p class="subtitle">Lamb and rice sensitive digestion dog food</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-details">
+          <img src="img/contact.png" alt="" />
+          <form action="#" method="POST">
+            <div class="row">
+              <label for="name ">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Write Your Name"
+                required
+              />
+            </div>
+            <div class="row">
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Your Mail"
+                required
+              />
+            </div>
+            <div class="row">
+              <label for="subject"> Subject: </label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Enter Subject"
+                required
+              />
+            </div>
+            <div class="row">
+              <label for="message">Message: </label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Write Your Message"
+                required
+              ></textarea>
+            </div>
+            <button class="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <section class="footer-section">
+        <div class="section-content">
+          <p class="description">All Right Reserved</p>
+          <ul class="social-links">
+            <li class="social-link"><i class="fa-brands fa-twitter"></i></li>
+            <li class="social-link"><i class="fa-brands fa-facebook"></i></li>
+            <li class="social-link"><i class="fa-brands fa-linkedin"></i></li>
+            <li class="social-link"><i class="fa-brands fa-youtube"></i></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <script src="javascript.js"></script>
+  </body>
+</html>

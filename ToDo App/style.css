@@ -1,0 +1,113 @@
+* {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2a2626;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(60, 21, 215);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.input-wrapper input {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 80%;
+  font-size: 1rem;
+}
+input[type='checkbox']:checked ~ .description {
+  text-decoration: line-through;
+  color: rgb(139, 138, 138);
+  transition: all 0.3s ease;
+}
+
+.input-wrapper button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(60, 20, 215);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+.input-wrapper button:hover {
+  background-color: #ffffff;
+  color: rgb(60, 21, 215);
+  border: 1px solid rgb(60, 21, 215);
+}
+.list-items {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+}
+.list-item {
+  background-color: #dcdaef;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.list-item:hover {
+  background-color: #cbbff5;
+  cursor: pointer;
+}
+.list-item button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.list-item button:hover {
+  background-color: darkred;
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 95%;
+  }
+  .input-wrapper input {
+    width: 100%;
+  }
+  .input-wrapper .add-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

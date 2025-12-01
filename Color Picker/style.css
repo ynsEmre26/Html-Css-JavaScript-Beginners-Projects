@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.color-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.color-picker-button {
+  border: none;
+  background-color: hsl(240, 42%, 50%);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px 20px hsl(0, 0%, 0%);
+  transition: 0.3s;
+}
+.color-picker-button:hover {
+  color: hsl(240, 42%, 50%);
+  background-color: #fff;
+  border: 1px solid hsl(240, 42%, 50%);
+  transform: scale(1.2);
+  animation: colorChange 1s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #ff3e3e;
+    color: #020000;
+  }
+  25% {
+    background-color: #ff9900;
+    color: #ff0000;
+  }
+  50% {
+    background-color: #2f00ff;
+    color: #fff;
+  }
+  75% {
+    background-color: #1ec31e;
+    color: #4400ff;
+  }
+  100% {
+    background-color: #0077ff;
+    color: #9dff00;
+  }
+}

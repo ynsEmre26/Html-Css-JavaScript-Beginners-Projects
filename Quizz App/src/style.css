@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@import 'tailwindcss';
+
+:root {
+  --primary-color: rgb(40, 100, 160);
+  --secondary-color: #fff;
+}
+
+/*tailwind classes ortak kullanım ile hepsini tek clasta halletme*/
+.catbtn {
+  @apply flex flex-col items-center px-10 py-2 gap-2.5 transition duration-300 hover:cursor-pointer;
+}
+.img {
+  @apply w-12;
+}
+* {
+  font-family: 'poppins', sans-serif;
+}
+body {
+  background: linear-gradient(to right, rgb(20, 120, 220), rgb(240, 140, 140));
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.result-section .btn-try-again,
+.questions-footer .btn-next {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: 0.2s background-color;
+}
+.result-section .btn-try-again:hover,
+.questions-footer .btn-next:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.container {
+  background: linear-gradient(
+    to top left,
+    rgb(108, 175, 241),
+    rgb(197, 196, 91)
+  );
+  box-shadow: 0px 5px 10px;
+}
+
+/*===================  CATEGORY SECTİON  =================*/
+.category-section .title {
+  color: rgb(40, 100, 160);
+}
+.category-section .description {
+  color: rgb(0, 0, 0);
+}
+.category-section .categories .btn {
+  background-color: var(--secondary-color);
+}
+.category-section .categories .btn:hover {
+  transform: scale(1.2);
+}
+
+/*===================  QUESTİON SECTİON  =================*/
+
+.questions-section .questions-header {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+.questions-section .questions-header .time-wrapper {
+  background-color: rgb(40, 100, 160);
+  color: var(--secondary-color);
+}
+
+.questions-section .questions-main .questions-list .item {
+  background-color: var(--secondary-color);
+  transition: 0.2s ease-in-out;
+}
+.questions-section .questions-main .questions-list .item:hover {
+  background-color: #c6bfbf;
+}
+.questions-section .questions-main .questions-list .item.correct {
+  background-color: rgb(100, 230, 120);
+}
+.questions-section .questions-main .questions-list .item.incorrect {
+  background-color: rgb(230, 100, 120);
+}
+
+/*===================  RESULT SECTİON  =================*/

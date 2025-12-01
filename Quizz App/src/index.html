@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <!----------------------  LİNKİNG FONTAWESOME FOR İCONS --------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <!----------------------  LİNKİNG STYLE --------------------->
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="h-screen flex items-center justify-center">
+    <main>
+      <div class="container w-[500px] max-h-[600px] min-h-[500px] rounded-3xl">
+        <!-------CATEGORY SECTİON ---------->
+        <section
+          class="category-section flex flex-col items-center justify-evenly h-[500px]"
+        >
+          <h2 class="title text-5xl font-bold">Quiz App</h2>
+          <p class="description text-lg font-semibold">Choose a category!</p>
+          <div class="categories grid grid-cols-2 gap-10">
+            <button class="btn HTML catbtn">
+              <img src="../img/html-5.svg" alt="" class="img" />HTML
+            </button>
+            <button class="btn CSS catbtn">
+              <img src="../img/css-3.svg" alt="" class="img" />CSS
+            </button>
+            <button class="btn JAVASCRIPT catbtn">
+              <img src="../img/javascript.svg" alt="" class="img" />JAVASCRIPT
+            </button>
+            <button class="btn REACT catbtn">
+              <img src="../img/react.svg" alt="" class="img" />REACT
+            </button>
+          </div>
+        </section>
+        <!--------QUESTİONS SECTİON---------->
+        <section class="questions-section hidden">
+          <div
+            class="questions-header flex items-center justify-between py-2.5 px-5"
+          >
+            <h4 class="title text-2xl font-bold">Quiz Application</h4>
+            <span
+              class="time-wrapper flex items-center gap-2.5 rounded-xl text-base font-bold px-2.5 py-1.5"
+            >
+              <i class="fa-regular fa-alarm-clock"></i>
+              <p class="time">10s</p>
+            </span>
+          </div>
+
+          <div class="questions-main my-8 px-5">
+            <h3 class="title text-lg font-bold"></h3>
+            <ul
+              class="questions-list flex flex-col items-center justify-center my-5"
+            ></ul>
+          </div>
+          <hr />
+          <div class="questions-footer flex items-center justify-between p-5">
+            <p class="info text-lg"></p>
+            <button class="btn-next invisible py-2 px-8">
+              Next <span><i class="fa-solid fa-right-long"></i></span>
+            </button>
+          </div>
+        </section>
+        <!--------RESULT SECTİON------------->
+        <section
+          class="result-section hidden flex-col items-center justify-between py-8 gap-4"
+        >
+          <img src="../img/party-popper.svg" alt="" class="w-[45%]" />
+          <h3 class="title text-4xl font-bold">Quiz Completed!</h3>
+          <p
+            class="description text-xl py-2.5 px-8 font-medium text-center"
+          ></p>
+          <button class="btn-try-again invisible py-2 px-8">Try Again</button>
+        </section>
+      </div>
+    </main>
+    <script src="../questions.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

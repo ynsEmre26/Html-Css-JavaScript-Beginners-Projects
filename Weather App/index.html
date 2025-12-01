@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="aside">
+          <!--SEARCH SECTİON-->
+          <div class="search-section">
+            <div class="input-wrapper">
+              <button class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search for cities"
+              />
+            </div>
+          </div>
+          <!--CURRENT WEATHER SECTİON-->
+          <div class="current-section">
+            <div class="city-info">
+              <div class="city">
+                <h1 class="title">Madrid</h1>
+                <p class="description">chance of rain 0%</p>
+              </div>
+              <h2 class="temperature">20°</h2>
+            </div>
+
+            <div class="weather-icon"></div>
+          </div>
+          <!--HOURLY FORECAST WEATHER SECTİON-->
+          <div class="hourly-forecast-section swiper">
+            <h3 class="title">TODAY'S FORECAST</h3>
+            <div class="slider-wrapper">
+              <div class="hourly-list swiper-wrapper"></div>
+
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+          <!--CONDİTİONS WEATHER SECTİON-->
+          <div class="conditions-section">
+            <h3 class="title">AİR CONDİTİONS</h3>
+            <ul class="conditions-list">
+              <li class="item realFeel">
+                <span class="title">
+                  <i class="fa-regular fa-temperature-quarter"></i>
+                  <p>Real Feel</p>
+                </span>
+                <p class="content temperature">30°</p>
+              </li>
+              <li class="item wind">
+                <span class="title">
+                  <i class="fa-solid fa-wind"></i>
+                  <p>Wind</p>
+                </span>
+                <p class="content kph">30°</p>
+              </li>
+              <li class="item chanceOfRain">
+                <span class="title">
+                  <i class="fa-solid fa-droplet"></i>
+                  <p>Chance of rain</p>
+                </span>
+                <p class="content rain">30°</p>
+              </li>
+              <li class="item uvIndex">
+                <span class="title">
+                  <i class="fa-solid fa-sun"></i>
+                  <p>Uv Index</p>
+                </span>
+                <p class="content uv">30°</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="aside">
+          <!--DAİLY FORECAST WEATHER SECTİON-->
+          <div class="daily-forecast-section">
+            <h3 class="title">7-DAY FORECAST</h3>
+            <ul class="daily-list"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -64,7 +64,16 @@ Each project has its own folder with a dedicated README explaining its purpose, 
   <img src="/Timer/Count-down-timer.png" width="400" />
 </p>
 
-### 7️⃣ Weather App
+### 7️⃣ ToDo App
+
+- **Description:** A Todo App built with HTML, CSS, and JavaScript, featuring task creation, deletion, completion tracking and local storage support.
+- **Tech Stack:** HTML, CSS, JavaScript, localStorage
+- **Preview:**
+<p align="center">
+  <img src="/ToDo App/ToDo App.jpg" width="400" />
+</p>
+
+### 8️⃣ Weather App
 
 - **Description:** Real-time weather forecasts: current, hourly, 7-day, with detailed metrics like real-feel temperature, wind, UV index, and precipitation probability.
 - **Tech Stack:** HTML, CSS, JavaScript, API, Swiper.js
@@ -77,7 +86,7 @@ Each project has its own folder with a dedicated README explaining its purpose, 
 
 ## 🛠️ Tech Stack Used
 
-- **Frontend:** HTML5, CSS3, Tailwind, JavaScript
+- **Frontend:** HTML5, CSS3, Tailwind, JavaScript, localStorage
 - **Libraries & APIs:** Swiper.js, Weather APIs
 - **Tools:** Git, GitHub
 
@@ -92,6 +101,7 @@ Each project has its own folder with a dedicated README explaining its purpose, 
 │── Quiz-app/
 │── Slider/
 │── Timer/
+│── ToDo-app/
 │── Weather-app/
 └── README.md
 
